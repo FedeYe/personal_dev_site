@@ -1,20 +1,27 @@
 import type { SkillsSection } from '@/types/sections/skills-section.types';
 import type { ReadonlyDeep } from 'type-fest';
 import {
-  apolloGraphql,
-  astro,
-  chakraUi,
-  cypress,
-  eslint,
-  firebase,
+  cplusplus,
+  css,
+  docker,
+  express,
+  git,
+  github,
+  html5,
+  jira,
+  kotlin,
   mongoDb,
-  nestJs,
-  pnpm,
+  nodejs,
+  ollama,
+  php,
   postgreSql,
-  prettier,
+  python,
+  qt,
   react,
-  sass,
-  supabase,
+  shadcnui,
+  springboot,
+  streamlit,
+  swift,
   tailwindCss,
   typescript,
 } from '../helpers/skills';
@@ -28,50 +35,44 @@ const skillsSectionData = {
   },
   skillSets: [
     {
-      title: 'I already know',
+      title: 'Già utilizzati',
       skills: [
-        react({
-          level: 5,
-          description:
-            'Proin ut erat sed massa tempus suscipit. Mauris efficitur nunc sem, nec scelerisque ligula bibendum ut.',
-        }),
-        typescript({
-          level: 4,
-          description: 'Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.',
-        }),
-        sass({
-          level: 4,
-          description: 'Nulla interdum pellentesque ultricies. Ut id eros commodo, ultrices ligula eu, elementum ante.',
-        }),
-        chakraUi({ level: 5 }),
+        // languages
+        typescript({ level: 3 }),
+        python({ level: 2 }),
+        cplusplus({ level: 3 }),
+        html5({ level: 4 }),
+        css({ level: 4 }),
+        php({ level: 2 }),
+        react({ level: 3 }),
+        // frontend library/framework
+        streamlit({ level: 4 }),
         tailwindCss({ level: 3 }),
-        prettier({ level: 5 }),
-        eslint({
-          level: 4,
-          description:
-            'Nulla tempor turpis at vehicula pharetra. Vestibulum tellus tortor, commodo et suscipit id, lobortis id nunc.',
-        }),
-        nestJs({
-          level: 3,
-          description:
-            'Praesent feugiat ultricies iaculis. In posuere vehicula odio, sed consequat velit porta viverra.',
-        }),
+        shadcnui({ level: 3 }),
+        qt({ level: 2 }),
+        // backend library/framework
+        nodejs({ level: 3 }),
+        express({ level: 2 }),
+        // database
         postgreSql({ level: 2 }),
-        mongoDb({ level: 1 }),
-        firebase({ level: 1 }),
-        pnpm({ level: 3 }),
+        mongoDb({ level: 3 }),
+        // other
+        ollama({ level: 4, description: 'Platform for downloading and running LLM locally.' }),
       ],
     },
     {
-      title: 'I want to learn',
-      skills: [apolloGraphql(), astro(), supabase(), cypress()],
+      title: 'Strumenti che uso',
+      skills: [git(), github(), jira(), docker()],
     },
     {
-      title: 'I speak',
+      title: 'Voglio imparare',
+      skills: [springboot(), swift(), kotlin()],
+    },
+    {
+      title: 'Lingue conosciute',
       skills: [
-        { icon: 'circle-flags:pl', name: 'Polish - native' },
-        { icon: 'circle-flags:us', name: 'English - C1' },
-        { icon: 'circle-flags:es-variant', name: 'Spanish - B1' },
+        { icon: 'circle-flags:it', name: 'Polish - native' },
+        { icon: 'circle-flags:en', name: 'English - C1' },
       ],
     },
   ],

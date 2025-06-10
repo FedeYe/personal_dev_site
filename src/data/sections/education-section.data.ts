@@ -4,28 +4,46 @@ import { website } from '../helpers/links';
 
 const educationSectionData = {
   config: {
-    title: 'Education',
+    title: 'Educazione',
     slug: 'education',
     icon: 'fa6-solid:graduation-cap',
     visible: true,
   },
   diplomas: [
     {
-      title: 'Information Technology',
-      institution: 'Wrocław University of Science and Technology',
-      image: import('@/assets/logos/wroclaw-university-of-technology.jpg'),
-      dates: [new Date('2014.10'), new Date('2016.07')],
-      description: 'Master degree. Specialization in software development.',
-      links: [website({ url: '#' })],
+      title: 'Laurea in Computer Science',
+      institution: 'Università degli Studi di Padova',
+      image: import('@/assets/logos/unipd.png'),
+      dates: [new Date('2020.10'), new Date('2024.09')],
+      description: "Laurea triennale in Informatica. Voto finale: 108/110.",
+      links: [website({ url: 'https://www.unipd.it/' })],
     },
     {
-      title: 'Information Technology',
-      institution: 'Wrocław University of Science and Technology',
-      image: import('@/assets/logos/wroclaw-university-of-technology.jpg'),
-      dates: [new Date('2011.10'), new Date('2014.07')],
-      description: "Bachelor's degree. Specialization in application development.",
-      links: [website({ url: '#' })],
+      title: 'Diploma scientifico, indirizzo Scienze Applicate',
+      institution: 'Liceo scientifico G.B.Quadri',
+      image: import('@/assets/logos/liceoquadri.png'),
+      dates: [new Date('2015.09'), new Date('2020.07')],
+      description: "Diploma Liceo Scientifico, indirizzo Scienze applicate. Voto finale: 100/100.",
+      links: [website({ url: 'https://www.liceoquadri.edu.it/' })],
     },
+    {
+      title: 'Certificato Lingua Inglese - C1 Advanced',
+      institution: 'Cambridge Assessment English',
+      image: import('@/assets/logos/cambridge.png'),
+      dates: [new Date('2019.10'), new Date('2020.06')],
+      description: `Esame di lingua inglese fornito da Cambridge Assessment English. Il C1 Advanced 
+      certifica un livello avanzato di competenza nella lingua ed è pensato per chi si prepara ad 
+      affrontare l’università o il mondo del lavoro.`,
+      links: [website({ url: 'https://www.cambridgeenglish.org/' })],
+    },
+    {
+      title: 'ECDL Full Standard',
+      institution: 'AICA - Associazione Italiana per l\'Informatica e il Calcolo Automatico',
+      image: import('@/assets/logos/liceoquadri.png'),
+      dates: [new Date('2015.09'), new Date('2020.07')],
+      description: "Certificazione che attesta le competenze digitali, riconosciuta a livello nazionale ed internazionle.",
+      links: [website({ url: 'https://www.icdl.it/' })],
+    }
   ],
 } as const satisfies ReadonlyDeep<EducationSection>;
 

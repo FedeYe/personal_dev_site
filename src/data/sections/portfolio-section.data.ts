@@ -1,26 +1,35 @@
 import type { PortfolioSection } from '@/types/sections/portfolio-section.types';
 import type { ReadonlyDeep } from 'type-fest';
-import { demo, github, mockups, website } from '../helpers/links';
+import { github, website } from '../helpers/links';
 import {
-  chakraUi,
-  eslint,
-  firebase,
-  jest,
-  nestJs,
-  nextJs,
-  nx,
-  pnpm,
+  auth0,
+  cplusplus,
+  css,
+  docker,
+  express,
+  html5,
+  javascript,
+  jsonschema,
+  mongoDb,
+  nodejs,
+  php,
   postgreSql,
-  prettier,
+  python,
+  qt,
   react,
-  sass,
+  reactQuery,
+  shadcnui,
+  streamlit,
+  stripe,
   tailwindCss,
+  txtai,
   typescript,
+  vite,
 } from '../helpers/skills';
 
 const portfolioSectionData = {
   config: {
-    title: 'Projects',
+    title: 'Progetti',
     slug: 'projects',
     icon: 'fa6-solid:rocket',
     visible: true,
@@ -31,97 +40,174 @@ const portfolioSectionData = {
   },
   projects: [
     {
-      name: 'Golden Bulls',
-      image: import('@/assets/portfolio/project-1.jpeg'),
-      dates: [new Date('2020-03'), null],
+      name: 'QuickBite',
+      image: import('@/assets/portfolio/quickbite.jpeg'),
+      dates: [new Date('2025-04'), new Date('2025-05')],
       details: [
-        { label: 'Team size', value: '1 person' },
-        { label: 'My role', value: ['Front-end Developer', 'Designer'] },
+        { label: 'Team size', value: '1 persona' },
+        { label: 'My role', value: ['Full-stack Developer'] },
         { label: 'Company', value: 'None' },
-        { label: 'Category', value: ['Web app', 'Open source'] },
+        { label: 'Category', value: ['Website'] },
       ],
       pdfDetails: [
         { label: 'Demo', value: 'https://golden-bulls-d73jd7.netlify.app', url: '#' },
         { label: 'Repository', value: 'https://github.com/mark-freeman/golden-bulls', url: '#' },
       ],
       screenshots: [
-        { src: import('@/assets/portfolio/project-1-screenshot-1.jpg'), alt: 'First screenshot' },
-        { src: import('@/assets/portfolio/project-1-screenshot-2.jpg'), alt: 'Second screenshot' },
-        { src: import('@/assets/portfolio/project-1-screenshot-3.jpg'), alt: 'Third screenshot' },
+        { src: import('@/assets/portfolio/homepage-quickbite.jpeg'), alt: 'Homepage screenshot' },
+        { src: import('@/assets/portfolio/search_results-quickbite.jpeg'), alt: 'Search results screenshot' },
+        {
+          src: import('@/assets/portfolio/manage_restaurant-quickbite.jpeg'),
+          alt: 'Manage restaurant info screenshot',
+        },
       ],
-      description:
-        'In tristique vulputate augue vel egestas. Quisque ac imperdiet tortor, at lacinia ex. Duis vel ex hendrerit, commodo odio sed, aliquam enim. Ut arcu nulla, tincidunt eget arcu eget, molestie vulputate nisi. Nunc malesuada leo et est iaculis facilisis.',
+      description: `-Sviluppata una piattaforma per la gestione di ordini da ristoranti, con funzionalità sia lato 
+        cliente che amministratore, come progetto full-stack.
+        -Implementate funzionalità chiave come ricerca testuale e filtrata, gestione del profilo utente, 
+        gestione ristorante (menù, informazioni, stato ordini).
+        -Realizzato il sito in modo dinamico e completamente responsive, ottimizzato per desktop e dispositivi 
+        mobili.
+        -Gestita l’interazione tra frontend e backend tramite API RESTful, con attenzione a modularità e 
+        scalabilità.
+        -Acquisite competenze pratiche nell’uso di tecnologie moderne e best practice nello sviluppo 
+        full stack.`,
       tagsList: {
-        title: 'Technologies',
-        tags: [nextJs(), sass(), pnpm(), eslint(), prettier()],
+        title: 'Tecnologie',
+        tags: [
+          react(),
+          typescript(),
+          shadcnui(),
+          tailwindCss(),
+          nodejs(),
+          express(),
+          mongoDb(),
+          auth0(),
+          reactQuery(),
+          stripe(),
+          vite(),
+        ],
       },
-      links: [mockups({ url: '#' }), demo({ url: '#' })],
+      links: [
+        website({ url: 'https://quickbite-app-frontend.onrender.com/' }),
+        github({ url: 'https://github.com/FedeYe/QuickBite-App-frontend' }),
+        github({ url: 'https://github.com/FedeYe/QuickBite-App-backend' }),
+      ],
     },
     {
-      name: 'TruQuest',
-      image: import('@/assets/portfolio/project-2.jpeg'),
-      dates: [new Date('2019-06'), new Date('2020-02')],
+      name: 'ChatSQL',
+      image: import('@/assets/portfolio/chatsql.jpeg'),
+      dates: [new Date('2023-10'), new Date('2024-04')],
       details: [
-        { label: 'Team size', value: '7 people' },
-        { label: 'My role', value: ['Front-end Developer', 'Mobile Developer', 'Designer'] },
-        { label: 'Company', value: 'Facebook' },
-        { label: 'Category', value: ['Web app', 'Mobile app'] },
+        { label: 'Team size', value: '7 persone' },
+        {
+          label: 'My role',
+          value: ['Project Manager', 'Progettista', 'Analista dei Requisiti', 'Front-end Developer'],
+        },
+        { label: 'Company', value: 'Zucchetti' },
+        { label: 'Category', value: ['Website'] },
       ],
       pdfDetails: [
-        { label: 'Demo', value: 'https://tru-quest-ck7ea3.netlify.app', url: '#' },
-        { label: 'Repository', value: 'https://github.com/mark-freeman/tru-quest', url: '#' },
+        {
+          label: 'GitHub',
+          value: 'https://github.com/Torchlight-SWE2324/ChatSQL',
+          url: 'https://github.com/Torchlight-SWE2324/ChatSQL',
+        },
       ],
-      description:
-        'Ut ultricies tortor at sodales aliquam. Vivamus metus ante, fringilla nec ligula in, suscipit rhoncus mauris. Praesent hendrerit velit odio, at accumsan urna faucibus convallis. Nunc at massa eget ligula volutpat dictum a sit amet libero. Vestibulum iaculis molestie maximus. In hac habitasse platea dictumst.',
+      screenshots: [
+        { src: import('@/assets/portfolio/main_ui-chatsql.jpeg'), alt: 'Main UI screenshot' },
+        { src: import('@/assets/portfolio/response_generation-chatsql.jpeg'), alt: 'Generated response screenshot' },
+        { src: import('@/assets/portfolio/file_selection-chatsql.jpeg'), alt: 'Database file selection screenshot' },
+      ],
+      description: `Progetto universitario per il corso di Ingegneria del software. 
+        -Sviluppata un’applicazione web per generare prompt mirati da fornire a un Large Language Model (LLM), 
+        a partire da query in linguaggio naturale.
+        -Il prompt viene generato dalla combinazione della query utente con i dati contenuti in un database 
+        rappresentato tramite file JSON, utilizzando un LLM con task di Sentence Similarity per trovare le 
+        tabelle inerenti alla richiesta.
+        -Obiettivo: facilitare l’interrogazione di basi di dati senza conoscenze SQL specifiche.
+        -Approfonditi concetti di NLP, prompt engineering e rappresentazione semantica dei dati.
+        -Progetto sviluppato in team da studenti, con il supporto tecnico e metodologico di Zucchetti S.p.A.,
+        azienda proponente.`,
       tagsList: {
-        title: 'Technologies',
-        tags: [react(), tailwindCss(), nestJs(), postgreSql()],
+        title: 'Tecnologie',
+        tags: [python(), streamlit(), docker(), txtai(), jsonschema()],
       },
-      links: [mockups({ url: '#' }), demo({ url: '#' })],
+      links: [github({ url: 'https://github.com/Torchlight-SWE2324/ChatSQL' })],
     },
     {
-      name: 'Software Chasers',
-      image: import('@/assets/portfolio/project-3.jpeg'),
-      dates: [new Date('2018-01'), new Date('2020-12')],
+      name: 'FitnessCenter',
+      image: import('@/assets/portfolio/fitness_center.jpeg'),
+      dates: [new Date('2023-05'), new Date('2023-09')],
       details: [
-        { label: 'Team size', value: '3 people' },
+        { label: 'Team size', value: '3 persone' },
         { label: 'My role', value: ['Front-end Developer', 'Designer'] },
         { label: 'Company', value: 'None' },
-        { label: 'Category', value: ['Web app', 'Open source'] },
+        { label: 'Category', value: ['Website'] },
       ],
       pdfDetails: [
-        { label: 'Demo', value: 'https://software-chasers-e82l8e.netlify.app', url: '#' },
-        { label: 'Repository', value: 'https://github.com/mark-freeman/software-chasers', url: '#' },
+        {
+          label: 'GitHub',
+          value: 'https://github.com/IsThisDemi/FitnessCenter',
+          url: 'https://github.com/IsThisDemi/FitnessCenter',
+        },
       ],
-      description:
-        'Quisque id consectetur eros. In hac habitasse platea dictumst. Sed eu pulvinar orci. Mauris consequat, est in dignissim varius, neque nisl commodo mauris, id blandit risus justo eu nulla.',
+      description: `-Sviluppato un sito web per una ipotetica palestra, con funzionalità dedicate sia agli utenti 
+        che agli amministratori.
+        -Implementate pagine e interfacce accessibili nel rispetto delle linee guida WCAG 2.1, con un approccio 
+        conforme agli standard di accessibilità, migliorando usabilità e inclusività del sito.
+        -Obiettivo: progetto finalizzato alla comprensione pratica di sviluppo accessibile e strutturato.`,
       tagsList: {
-        title: 'Technologies',
-        tags: [react(), chakraUi(), typescript(), nx(), pnpm()],
+        title: 'Tecnologie',
+        tags: [html5(), css(), php(), javascript(), postgreSql()],
       },
-      links: [website({ url: '#' }), github({ url: '#' })],
+      links: [github({ url: 'https://github.com/IsThisDemi/FitnessCenter' })],
     },
     {
-      name: 'Disco Ninjas',
-      image: import('@/assets/portfolio/project-4.jpeg'),
-      dates: [new Date('2016-05'), new Date('2018-07')],
+      name: 'PCBuilder',
+      image: import('@/assets/portfolio/pcbuilder.jpeg'),
+      dates: [new Date('2022-12'), new Date('2023-06')],
       details: [
-        { label: 'Team size', value: '11 people' },
-        { label: 'My role', value: 'Front-end Developer' },
-        { label: 'Company', value: 'Google' },
-        { label: 'Category', value: ['Mobile app', 'Open source'] },
+        { label: 'Team size', value: '2 persone' },
+        { label: 'My role', value: 'Analista, Progettista, Front-end Developer' },
+        { label: 'Company', value: 'None' },
+        { label: 'Category', value: ['Desktop Application', 'Open source'] },
       ],
       pdfDetails: [
-        { label: 'Demo', value: 'https://disco-ninjas-g321ol.netlify.app', url: '#' },
-        { label: 'Repository', value: 'https://github.com/mark-freeman/disco-ninjas', url: '#' },
+        { label: 'GitHub', value: 'https://github.com/FedeYe/PCBuilder', url: 'https://github.com/FedeYe/PCBuilder' },
       ],
-      description:
-        'Praesent eu neque tortor. Vestibulum ac magna nisl. Vivamus massa sem, feugiat in pharetra non, convallis egestas purus. Ut consequat ullamcorper sem, in euismod nibh posuere ut. ',
+      description: `Sviluppo di un'applicazione che permette di assemblare un computer, scegliendo le varie componenti 
+        hardware, tenendo conto della compatibilità tra esse. 
+        Obiettivo: realizzare un'applicazione usando Qt e rispettando i vincoli posti dal professore.`,
       tagsList: {
-        title: 'Technologies',
-        tags: [typescript(), jest(), firebase()],
+        title: 'Tecnologie',
+        tags: [cplusplus(), qt()],
       },
-      links: [mockups({ url: '#' }), github({ url: '#' })],
+      links: [github({ url: 'https://github.com/FedeYe/PCBuilder' })],
+    },
+    {
+      name: 'MyPal',
+      image: import('@/assets/portfolio/mypal.jpeg'),
+      dates: [new Date('2022-05'), new Date('2022-06')],
+      details: [
+        { label: 'Team size', value: '2 persone' },
+        { label: 'My role', value: 'Progettista Database' },
+        { label: 'Company', value: 'None' },
+        { label: 'Category', value: ['Database'] },
+      ],
+      pdfDetails: [
+        {
+          label: 'GitHub',
+          value: 'https://github.com/mattiapandolfo/MyPAL',
+          url: 'https://github.com/mattiapandolfo/MyPAL',
+        },
+      ],
+      description: `Obiettivo: dprogettare, creare e popolare un database in PostgreSQL rispettando i
+      parametri dati dal corso, mostrando alcune query, usando PostgreSQL e C++.`,
+      tagsList: {
+        title: 'Tecnologie',
+        tags: [cplusplus(), postgreSql()],
+      },
+      links: [github({ url: 'https://github.com/mattiapandolfo/MyPAL' })],
     },
   ],
 } as const satisfies ReadonlyDeep<PortfolioSection>;

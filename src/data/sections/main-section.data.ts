@@ -1,6 +1,6 @@
 import type { MainSection } from '@/types/sections/main-section.types';
 import type { ReadonlyDeep } from 'type-fest';
-import { facebook, github, linkedin, twitter } from '../helpers/links';
+import { github, linkedin } from '../helpers/links';
 
 const mainSectionData = {
   config: {
@@ -10,30 +10,38 @@ const mainSectionData = {
     visible: true,
   },
   image: import('@/assets/my-image.jpeg'),
-  fullName: 'Mark Freeman',
-  role: 'Senior React Developer',
+  fullName: 'Tao Ren Federico Ye',
+  role: 'Neolaureto Software Developer',
   details: [
-    { label: 'Phone', value: '605 475 6961', url: 'tel:605 475 6961' },
-    { label: 'Email', value: 'mark.freeman.dev@gmail.com', url: 'mailto:mark.freeman.dev@gmail.com' },
-    { label: 'From', value: 'Warsaw, Poland' },
-    { label: 'Salary range', value: '18 000 - 25 000 PLN' },
+    { label: 'Phone', value: '377 8154502', url: 'tel:377 8154502' },
+    { label: 'Email', value: 'taorenfedericoye@gmail.com', url: 'mailto:taorenfedericoye@gmail.com' },
+    { label: 'From', value: 'Vicenza, Italia' },
+    // { label: 'Salary range', value: '18 000 - 25 000 PLN' },
   ],
   pdfDetails: [
-    { label: 'Phone', value: '605 475 6961' },
-    { label: 'Email', value: 'mark.freeman.dev@gmail.com' },
-    { label: 'LinkedIn', value: '/in/mark-freeman', url: 'https://linkedin.com' },
-    { label: 'GitHub', value: '/mark-freeman', url: 'https://github.com' },
-    { label: 'Website', value: 'mark-freeman-personal-website.com', url: '/', fullRow: true },
+    { label: 'Phone', value: '377 8154502' },
+    { label: 'Email', value: 'taorenfedericoye@gmail.com' },
+    { label: 'LinkedIn', value: '/in/tao-ren-federico-ye', url: 'https://linkedin.com' },
+    { label: 'GitHub', value: '/FedeYe', url: 'https://github.com' },
+    { label: 'Website', value: 'tao-renfedericoe-ye-personal-website.com', url: '/', fullRow: true },
   ],
-  description:
-    'Lorem ipsum dolor sit amet, consectetur **adipiscing elit**. In sodales ac dui at *vestibulum*. In condimentum metus id dui tincidunt, in blandit mi [vehicula](/). Nulla lacinia, erat sit amet elementum vulputate, lectus mauris volutpat mi, vitae accumsan metus elit ut nunc. Vestibulum lacinia enim eget eros fermentum scelerisque. Proin augue leo, posuere ut imperdiet vitae, fermentum eu ipsum. Sed sed neque sagittis, posuere urna nec, commodo leo. Pellentesque posuere justo vitae massa volutpat maximus.',
-  tags: [{ name: 'Open for freelance' }, { name: 'Available for mentoring' }, { name: 'Working on side project' }],
+  description: `Mi chiamo Federico e sono uno sviluppatore software neolaureato con sede a Vicenza.
+    Sono fortemente motivato dal problem solving e dalla possibilità di trasformare idee complesse 
+    in soluzioni concrete e funzionanti. Affronto ogni progetto con impegno e attenzione ai dettagli, 
+    trovando grande soddisfazione nel completamento di sistemi ben strutturati ed efficienti, ma allo tempo
+    esteticamente accativanti. Valorizzo il lavoro di squadra, la condivisione delle conoscenze e 
+    sono costantemente orientato all’apprendimento di nuove tecnologie per crescere sia dal punto di 
+    vista professionale che personale.`,
+  tags: [{ name: 'Open to work' }, { name: 'Working on side project' }],
   action: {
     label: 'Download CV',
     url: '/cv.pdf',
-    downloadedFileName: 'CV-Mark_Freeman.pdf',
+    downloadedFileName: 'CV-Tao-Ren-Federico-Ye.pdf',
   },
-  links: [facebook({ url: '#' }), github({ url: '#' }), linkedin({ url: '#' }), twitter({ url: '#' })],
+  links: [
+    github({ url: 'https://github.com/FedeYe' }),
+    linkedin({ url: 'www.linkedin.com/in/tao-ren-federico-ye-48b581300' }),
+  ],
 } as const satisfies ReadonlyDeep<MainSection>;
 
 export default mainSectionData;
