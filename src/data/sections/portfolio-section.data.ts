@@ -96,8 +96,8 @@ const portfolioSectionData = {
       },
       links: [
         website({ url: 'https://quickbite-app-frontend.onrender.com/' }),
-        github({ url: 'https://github.com/FedeYe/QuickBite-App-frontend' }),
-        github({ url: 'https://github.com/FedeYe/QuickBite-App-backend' }),
+        github({ name: 'Github repo frontend', url: 'https://github.com/FedeYe/QuickBite-App-frontend' }),
+        github({ name: 'Github repo backend',url: 'https://github.com/FedeYe/QuickBite-App-backend' }),
       ],
     },
     {
@@ -131,7 +131,13 @@ const portfolioSectionData = {
         -Progetto sviluppato in team da studenti, con il supporto tecnico e metodologico di Zucchetti S.p.A., azienda proponente.`,
       tagsList: {
         title: 'Tecnologie',
-        tags: [python(), streamlit(), docker(), txtai(), jsonschema()],
+        tags: [
+          python(),
+          streamlit(),
+          docker(),
+          txtai({ description: 'Libreria open source per l’elaborazione del linguaggio naturale (NLP) in Python' }),
+          jsonschema({ description: 'Libreria Python usata per verificare la pertinenza di un file in formato JSON con un dato schema'}),
+        ],
       },
       links: [github({ url: 'https://github.com/Torchlight-SWE2324/ChatSQL' })],
     },

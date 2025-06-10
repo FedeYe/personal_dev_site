@@ -19,7 +19,7 @@ const educationSectionData = {
       links: [website({ url: 'https://www.unipd.it/' })],
     },
     {
-      title: 'Diploma scientifico, indirizzo Scienze Applicate',
+      title: 'Diploma scientifico - Scienze Applicate',
       institution: 'Liceo scientifico G.B.Quadri',
       image: import('@/assets/logos/liceoquadri.png'),
       dates: [new Date('2015.09'), new Date('2020.07')],
@@ -29,7 +29,7 @@ const educationSectionData = {
     {
       title: 'Certificato Lingua Inglese - C1 Advanced',
       institution: 'Cambridge Assessment English',
-      image: import('@/assets/logos/cambridge.png'),
+      image: import('@/assets/logos/cambridge.webp'),
       dates: [new Date('2019.10'), new Date('2020.06')],
       description: ``,
       links: [website({ url: 'https://www.cambridgeenglish.org/' })],

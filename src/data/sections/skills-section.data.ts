@@ -24,6 +24,7 @@ import {
   swift,
   tailwindCss,
   typescript,
+  vite,
 } from '../helpers/skills';
 
 const skillsSectionData = {
@@ -43,12 +44,16 @@ const skillsSectionData = {
         cplusplus({ level: 3 }),
         html5({ level: 4 }),
         css({ level: 4 }),
-        php({ level: 2 }),
-        react({ level: 3 }),
+        php({ level: 1 }),
+        react({ level: 2 }),
         // frontend library/framework
-        streamlit({ level: 4 }),
-        tailwindCss({ level: 3 }),
-        shadcnui({ level: 3 }),
+        streamlit({
+          level: 4,
+          description: 'Framework per creare applicazioni web interattive scrivendo codice interamente in Python',
+        }),
+        vite({ level: 1, description: 'Strumento di build per progetti web moderno, veloce e leggero' }),
+        tailwindCss({ level: 2 }),
+        shadcnui({ level: 2, description: 'Libreria di componenti UI per React basata su Tailwind CSS' }),
         qt({ level: 2 }),
         // backend library/framework
         nodejs({ level: 3 }),
@@ -71,8 +76,9 @@ const skillsSectionData = {
     {
       title: 'Lingue conosciute',
       skills: [
-        { icon: 'circle-flags:it', name: 'Italiano - native' },
+        { icon: 'circle-flags:it', name: 'Italiano - madrelingua' },
         { icon: 'circle-flags:en', name: 'Inglese - C1' },
+        { icon: 'circle-flags:cn', name: 'Cinese - base' },
       ],
     },
   ],
