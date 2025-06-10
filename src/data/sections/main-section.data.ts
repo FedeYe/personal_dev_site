@@ -23,7 +23,7 @@ const mainSectionData = {
     { label: 'Email', value: 'taorenfedericoye@gmail.com' },
     { label: 'LinkedIn', value: '/in/tao-ren-federico-ye', url: 'https://linkedin.com' },
     { label: 'GitHub', value: '/FedeYe', url: 'https://github.com' },
-    // { label: 'Website', value: 'tao-renfedericoe-ye-personal-website.com', url: '/', fullRow: true },
+    { label: 'Website', value: 'https://taorenfedericoye-portfolio.pages.dev/#profile', url: 'https://taorenfedericoye-portfolio.pages.dev/#profile', fullRow: true },
   ],
   description: `Mi chiamo Federico e sono uno sviluppatore software neolaureato con sede a Vicenza.
     Sono fortemente motivato dal problem solving e dalla possibilità di trasformare idee 
