@@ -71,8 +71,8 @@ const skillsSectionData = {
     {
       title: 'Lingue conosciute',
       skills: [
-        { icon: 'circle-flags:it', name: 'Polish - native' },
-        { icon: 'circle-flags:en', name: 'English - C1' },
+        { icon: 'circle-flags:it', name: 'Italiano - native' },
+        { icon: 'circle-flags:en', name: 'Inglese - C1' },
       ],
     },
   ],

@@ -9,7 +9,7 @@ const mainSectionData = {
     slug: 'profile',
     visible: true,
   },
-  image: import('@/assets/my-image.jpeg'),
+  image: import('@/assets/my-image.jpg'),
   fullName: 'Tao Ren Federico Ye',
   role: 'Neolaureto Software Developer',
   details: [
@@ -23,15 +23,13 @@ const mainSectionData = {
     { label: 'Email', value: 'taorenfedericoye@gmail.com' },
     { label: 'LinkedIn', value: '/in/tao-ren-federico-ye', url: 'https://linkedin.com' },
     { label: 'GitHub', value: '/FedeYe', url: 'https://github.com' },
-    { label: 'Website', value: 'tao-renfedericoe-ye-personal-website.com', url: '/', fullRow: true },
+    // { label: 'Website', value: 'tao-renfedericoe-ye-personal-website.com', url: '/', fullRow: true },
   ],
   description: `Mi chiamo Federico e sono uno sviluppatore software neolaureato con sede a Vicenza.
-    Sono fortemente motivato dal problem solving e dalla possibilità di trasformare idee complesse 
-    in soluzioni concrete e funzionanti. Affronto ogni progetto con impegno e attenzione ai dettagli, 
-    trovando grande soddisfazione nel completamento di sistemi ben strutturati ed efficienti, ma allo tempo
-    esteticamente accativanti. Valorizzo il lavoro di squadra, la condivisione delle conoscenze e 
-    sono costantemente orientato all’apprendimento di nuove tecnologie per crescere sia dal punto di 
-    vista professionale che personale.`,
+    Sono fortemente motivato dal problem solving e dalla possibilità di trasformare idee 
+    complesse in soluzioni concrete e funzionanti. 
+    Affronto ogni progetto con impegno e attenzione ai dettagli, trovando grande soddisfazione nel completamento di sistemi ben strutturati ed efficienti, ma allo stesso tempo esteticamente accativanti.
+    Valorizzo il lavoro di squadra, la condivisione delle conoscenze e sono costantemente orientato all’apprendimento di nuove tecnologie per crescere sia dal punto di vista professionale che personale.`,
   tags: [{ name: 'Open to work' }, { name: 'Working on side project' }],
   action: {
     label: 'Download CV',

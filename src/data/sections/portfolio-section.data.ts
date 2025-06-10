@@ -50,8 +50,21 @@ const portfolioSectionData = {
         { label: 'Category', value: ['Website'] },
       ],
       pdfDetails: [
-        { label: 'Demo', value: 'https://golden-bulls-d73jd7.netlify.app', url: '#' },
-        { label: 'Repository', value: 'https://github.com/mark-freeman/golden-bulls', url: '#' },
+        {
+          label: 'Website',
+          value: 'https://quickbite-app-frontend.onrender.com/',
+          url: 'https://quickbite-app-frontend.onrender.com/',
+        },
+        {
+          label: 'FE Repository',
+          value: 'https://github.com/FedeYe/QuickBite-App-frontend',
+          url: 'https://github.com/FedeYe/QuickBite-App-frontend',
+        },
+        {
+          label: 'BE Repository',
+          value: 'https://github.com/FedeYe/QuickBite-App-backend',
+          url: 'https://github.com/FedeYe/QuickBite-App-backend',
+        },
       ],
       screenshots: [
         { src: import('@/assets/portfolio/homepage-quickbite.jpeg'), alt: 'Homepage screenshot' },
@@ -61,16 +74,10 @@ const portfolioSectionData = {
           alt: 'Manage restaurant info screenshot',
         },
       ],
-      description: `-Sviluppata una piattaforma per la gestione di ordini da ristoranti, con funzionalità sia lato 
-        cliente che amministratore, come progetto full-stack.
-        -Implementate funzionalità chiave come ricerca testuale e filtrata, gestione del profilo utente, 
-        gestione ristorante (menù, informazioni, stato ordini).
-        -Realizzato il sito in modo dinamico e completamente responsive, ottimizzato per desktop e dispositivi 
-        mobili.
-        -Gestita l’interazione tra frontend e backend tramite API RESTful, con attenzione a modularità e 
-        scalabilità.
-        -Acquisite competenze pratiche nell’uso di tecnologie moderne e best practice nello sviluppo 
-        full stack.`,
+      description: `-Sviluppata una piattaforma per la gestione di ordini da ristoranti, con funzionalità sia lato cliente che amministratore, come progetto full-stack.
+        -Implementate funzionalità chiave come ricerca testuale e filtrata, gestione del profilo utente, gestione ristorante (menù, informazioni, stato ordini).
+        -Gestita l’interazione tra frontend e backend tramite API RESTful, rendendo l'interfaccia responsive e adatta a schermi di diverse dimensioni.
+        -Acquisite competenze pratiche nell’uso di tecnologie moderne e best practice nello sviluppo full stack.`,
       tagsList: {
         title: 'Tecnologie',
         tags: [
@@ -95,7 +102,7 @@ const portfolioSectionData = {
     },
     {
       name: 'ChatSQL',
-      image: import('@/assets/portfolio/chatsql.jpeg'),
+      image: import('@/assets/portfolio/chatsql.png'),
       dates: [new Date('2023-10'), new Date('2024-04')],
       details: [
         { label: 'Team size', value: '7 persone' },
@@ -118,16 +125,10 @@ const portfolioSectionData = {
         { src: import('@/assets/portfolio/response_generation-chatsql.jpeg'), alt: 'Generated response screenshot' },
         { src: import('@/assets/portfolio/file_selection-chatsql.jpeg'), alt: 'Database file selection screenshot' },
       ],
-      description: `Progetto universitario per il corso di Ingegneria del software. 
-        -Sviluppata un’applicazione web per generare prompt mirati da fornire a un Large Language Model (LLM), 
-        a partire da query in linguaggio naturale.
-        -Il prompt viene generato dalla combinazione della query utente con i dati contenuti in un database 
-        rappresentato tramite file JSON, utilizzando un LLM con task di Sentence Similarity per trovare le 
-        tabelle inerenti alla richiesta.
+      description: `-Sviluppata un’applicazione web per generare prompt mirati da fornire a un Large Language Model (LLM), a partire da query in linguaggio naturale.
+        -Il prompt conterrà i dati presi dal database recuperati attraverso un LLM con task di Sentence Similarity per trovare le tabelle più inerenti alla richiesta.
         -Obiettivo: facilitare l’interrogazione di basi di dati senza conoscenze SQL specifiche.
-        -Approfonditi concetti di NLP, prompt engineering e rappresentazione semantica dei dati.
-        -Progetto sviluppato in team da studenti, con il supporto tecnico e metodologico di Zucchetti S.p.A.,
-        azienda proponente.`,
+        -Progetto sviluppato in team da studenti, con il supporto tecnico e metodologico di Zucchetti S.p.A., azienda proponente.`,
       tagsList: {
         title: 'Tecnologie',
         tags: [python(), streamlit(), docker(), txtai(), jsonschema()],
@@ -151,10 +152,7 @@ const portfolioSectionData = {
           url: 'https://github.com/IsThisDemi/FitnessCenter',
         },
       ],
-      description: `-Sviluppato un sito web per una ipotetica palestra, con funzionalità dedicate sia agli utenti 
-        che agli amministratori.
-        -Implementate pagine e interfacce accessibili nel rispetto delle linee guida WCAG 2.1, con un approccio 
-        conforme agli standard di accessibilità, migliorando usabilità e inclusività del sito.
+      description: `-Sviluppo di un sito web per una ipotetica palestra, con funzionalità dedicate sia agli utenti che agli amministratori, implementando pagine e interfacce accessibili nel rispetto delle linee guida WCAG 2.1.
         -Obiettivo: progetto finalizzato alla comprensione pratica di sviluppo accessibile e strutturato.`,
       tagsList: {
         title: 'Tecnologie',
@@ -175,9 +173,7 @@ const portfolioSectionData = {
       pdfDetails: [
         { label: 'GitHub', value: 'https://github.com/FedeYe/PCBuilder', url: 'https://github.com/FedeYe/PCBuilder' },
       ],
-      description: `Sviluppo di un'applicazione che permette di assemblare un computer, scegliendo le varie componenti 
-        hardware, tenendo conto della compatibilità tra esse. 
-        Obiettivo: realizzare un'applicazione usando Qt e rispettando i vincoli posti dal professore.`,
+      description: `Sviluppo di un'applicazione che permette di assemblare computer, scegliendo le varie componenti hardware, utilizzando il framework Qt.`,
       tagsList: {
         title: 'Tecnologie',
         tags: [cplusplus(), qt()],
@@ -201,8 +197,7 @@ const portfolioSectionData = {
           url: 'https://github.com/mattiapandolfo/MyPAL',
         },
       ],
-      description: `Obiettivo: dprogettare, creare e popolare un database in PostgreSQL rispettando i
-      parametri dati dal corso, mostrando alcune query, usando PostgreSQL e C++.`,
+      description: `Obiettivo: progettare, creare e popolare un database in PostgreSQL rispettando i parametri dati dal corso, mostrando alcune query, usando PostgreSQL e C++.`,
       tagsList: {
         title: 'Tecnologie',
         tags: [cplusplus(), postgreSql()],

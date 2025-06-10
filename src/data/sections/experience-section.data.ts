@@ -17,14 +17,10 @@ const experienceSectionData = {
       image: import('@/assets/logos/zero12-logo.jpg'),
       dates: [new Date('2024-05'), new Date('2024-07')],
       description: `
-        -Sviluppato un assistente AI per JIRA basato su Retrieval-Augmented Generation (RAG) e modelli LLM 
-        locali, per generare automaticamente proposte di risoluzione.
-        -Realizzata una versione chatbot dell’assistente con interfaccia in stile ChatGPT per migliorare 
-        l’interazione utente.
-        -Condotta un’analisi comparativa tra modelli LLM locali e AWS Bedrock, valutando costi, performance 
-        e aspetti legati alla privacy.
-        -Gestione autonoma del progetto in ambiente Agile, in stretta collaborazione con il team di 
-        sviluppo aziendale. 
+        -Sviluppato un assistente AI per JIRA basato su Retrieval-Augmented Generation (RAG) e modelli LLM locali, per generare automaticamente proposte di risoluzione.
+        -Realizzata una versione chatbot dell’assistente con interfaccia in stile ChatGPT per migliorare l’interazione utente.
+        -Condotta un’analisi comparativa tra modelli LLM locali e AWS Bedrock, valutando costi, performance e aspetti legati alla privacy.
+        -Gestione autonoma del progetto in ambiente Agile, in stretta collaborazione con il team di sviluppo aziendale. 
       `,
       tagsList: {
         title: 'Tecnologie',

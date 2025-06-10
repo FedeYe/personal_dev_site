@@ -24,11 +24,11 @@ const config = {
     description: 
       `Pagina personale di Tao Ren Federico Ye - sviluppatore software. Contiene un riassunto delle mie 
       skills, esperienze lavorative, progetti personali, educazione e informazioni di contatto`,
-    faviconPath: '/src/assets/my-image.jpeg',
+    faviconPath: '/src/assets/my-image.jpg',
   },
   pdf: {
     footer:
-      'I hereby give consent for my personal data included in my application to be processed for the purposes of the recruitment process.',
+      '',
   },
 } as const satisfies ReadonlyDeep<Config>;
 

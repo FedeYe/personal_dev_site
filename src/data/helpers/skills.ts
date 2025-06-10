@@ -185,7 +185,7 @@ export const springboot = createSkillFactory({
 });
 
 export const streamlit = createSkillFactory({
-  name: 'Shadcn/ui',
+  name: 'Streamlit',
   icon: 'simple-icons:streamlit',
   iconColor: '#FF4B4B',
   url: 'https://streamlit.io/',

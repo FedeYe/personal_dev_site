@@ -31,9 +31,7 @@ const educationSectionData = {
       institution: 'Cambridge Assessment English',
       image: import('@/assets/logos/cambridge.png'),
       dates: [new Date('2019.10'), new Date('2020.06')],
-      description: `Esame di lingua inglese fornito da Cambridge Assessment English. Il C1 Advanced 
-      certifica un livello avanzato di competenza nella lingua ed è pensato per chi si prepara ad 
-      affrontare l’università o il mondo del lavoro.`,
+      description: ``,
       links: [website({ url: 'https://www.cambridgeenglish.org/' })],
     },
     {
@@ -41,7 +39,7 @@ const educationSectionData = {
       institution: 'AICA - Associazione Italiana per l\'Informatica e il Calcolo Automatico',
       image: import('@/assets/logos/liceoquadri.png'),
       dates: [new Date('2015.09'), new Date('2020.07')],
-      description: "Certificazione che attesta le competenze digitali, riconosciuta a livello nazionale ed internazionle.",
+      description: "",
       links: [website({ url: 'https://www.icdl.it/' })],
     }
   ],
