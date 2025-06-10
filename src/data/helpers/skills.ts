@@ -1,6 +1,5 @@
 import createSkillFactory from '@/data/_internals/create-skill-factory';
 import { IconName } from '@/types/shared';
-import { createRelativeSchema } from 'astro/dist/core/config/schema';
 
 /*
 
