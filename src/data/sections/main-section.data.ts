@@ -38,7 +38,7 @@ const mainSectionData = {
   },
   links: [
     github({ url: 'https://github.com/FedeYe' }),
-    linkedin({ url: 'www.linkedin.com/in/tao-ren-federico-ye-48b581300' }),
+    linkedin({ url: 'https://www.linkedin.com/in/tao-ren-federico-ye-48b581300/' }),
   ],
 } as const satisfies ReadonlyDeep<MainSection>;
 
