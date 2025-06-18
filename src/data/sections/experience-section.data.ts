@@ -1,7 +1,7 @@
 import type { ExperienceSection } from '@/types/sections/experience-section.types';
 import type { ReadonlyDeep } from 'type-fest';
 import { linkedin, website } from '../helpers/links';
-import { jira, langchain, mongoDb, ollama, python, streamlit, typescript } from '../helpers/skills';
+import { comunicazione, dettagli, gestionetempopriorita, jira, langchain, mongoDb, ollama, python, streamlit, typescript } from '../helpers/skills';
 
 const experienceSectionData = {
   config: {
@@ -39,8 +39,8 @@ const experienceSectionData = {
         -Cameriere di sala, gestione delle ordinazioni e del servizio al tavolo, garantendo un'esperienza fluida e piacevole.  
       `,
       tagsList: {
-        title: '',
-        tags: [],
+        title: 'Competenze',
+        tags: [gestionetempopriorita(), comunicazione(), dettagli()],
       },
       links: [],
     },

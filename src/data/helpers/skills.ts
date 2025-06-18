@@ -230,3 +230,17 @@ export const vite = createSkillFactory({
   iconColor: '#646CFF',
   url: 'https://vite.dev/',
 });
+
+// Skills from bartending
+
+export const gestionetempopriorita = createSkillFactory({
+  name: 'Gestione del tempo e delle priorità',
+});
+
+export const comunicazione = createSkillFactory({
+  name: 'Comunicazione efficace',
+});
+
+export const dettagli = createSkillFactory({
+  name: 'Attenzione ai dettagli',
+});
